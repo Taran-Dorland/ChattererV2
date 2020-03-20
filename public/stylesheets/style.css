@@ -1,8 +1,52 @@
 body {
-  padding: 50px;
+  height: 100%;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  min-height: 100%;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body > * {
+  flex-shrink: 0;
 }
 
 a {
   color: #00B7FF;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.foot-container {
+  height: 5%;
+  background-color: lightgray;
+  flex-grow: 1;
+}
+
+div.chat-row {
+  
+}
+
+div.chat-row:hover {
+  opacity: 50%;
+}
+
+.chat-container {
+  height: 85%;
+  background-color: darkgray;
+  overflow: auto;
+  flex-grow: 1;
+}
+
+div.chat-input-container {
+  top: 5%;
 }

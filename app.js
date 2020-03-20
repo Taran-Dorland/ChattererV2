@@ -26,6 +26,7 @@ app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist')
 app.use('/popper', express.static(__dirname + '/node_modules/@popperjs/core/dist/umd'));
 app.use('/tippy', express.static(__dirname + '/node_modules/tippy.js/dist'));
 app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist'));
+app.use('/fontawesome', express.static(__dirname + '/node_modules/@fortawesome/fontawesome-free'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

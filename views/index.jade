@@ -1,6 +1,20 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  button(type='button' class='btn btn-primary') Wowzers
+  //- h1= title
+  //- p Welcome to #{title}
+  //- button(type='button' class='btn btn-primary') Wowzers
+
+  include ./modal-login.jade
+
+  div(class="container chat-container d-flex flex-column")
+
+  div(class="container foot-container")
+    div(class="input-group mb-3 chat-input-container")
+      .input-group-prepend
+        span.input-group-text Char Limit
+      |   
+      input.form-control(type='text')
+      |   
+      .input-group-append
+        button.btn.btn-outline-success(type='button') Chat
